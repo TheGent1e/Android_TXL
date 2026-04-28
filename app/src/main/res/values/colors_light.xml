@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 浅色主题背景 -->
+    <color name="bg_dark_light">#F5F5F5</color>
+    <color name="bg_card_light_theme">#FFFFFF</color>
+    <color name="bg_card_lighter">#FAFAFA</color>
+
+    <!-- 浅色主题文字 -->
+    <color name="text_primary_light">#212121</color>
+    <color name="text_secondary_light">#757575</color>
+    <color name="text_muted_light">#BDBDBD</color>
+
+    <!-- 浅色主题边框 -->
+    <color name="glass_border_light">#E0E0E0</color>
+    <color name="glass_bg_light">#F0F0F0</color>
+</resources>

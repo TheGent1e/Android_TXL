@@ -4,21 +4,22 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends BaseActivity {
     private RecyclerView recyclerView;
     private ContactAdapter adapter;
     private DatabaseHelper dbHelper;
     private EditText etSearch;
     private ImageButton btnAdd;
+    private ImageButton btnThemeToggle;
     private SideIndexView sideIndex;
     private TextView tvEmpty;
     private LinearLayout tabDialer;
@@ -36,12 +37,14 @@ public class MainActivity extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
         loadContacts();
+        updateThemeIcon();
     }
 
     private void initViews() {
         recyclerView = findViewById(R.id.recycler_view);
         etSearch = findViewById(R.id.et_search);
         btnAdd = findViewById(R.id.btn_add);
+        btnThemeToggle = findViewById(R.id.btn_theme_toggle);
         sideIndex = findViewById(R.id.side_index);
         tvEmpty = findViewById(R.id.tv_empty);
         tabDialer = findViewById(R.id.tab_dialer);
@@ -52,6 +55,8 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(MainActivity.this, AddEditContactActivity.class);
             startActivity(intent);
         });
+
+        btnThemeToggle.setOnClickListener(v -> ThemeManager.toggleTheme(this));
 
         tabDialer.setOnClickListener(v -> {
             DialerBottomSheet bottomSheet = DialerBottomSheet.newInstance(null);
@@ -72,6 +77,14 @@ public class MainActivity extends AppCompatActivity {
                 if (position != -1) recyclerView.scrollToPosition(position);
             }
         });
+    }
+
+    private void updateThemeIcon() {
+        if (ThemeManager.isDarkTheme(this)) {
+            btnThemeToggle.setImageResource(R.drawable.ic_theme_light);
+        } else {
+            btnThemeToggle.setImageResource(R.drawable.ic_theme_dark);
+        }
     }
 
     private void loadContacts() {
@@ -95,9 +108,9 @@ public class MainActivity extends AppCompatActivity {
 
     private void updateEmptyState() {
         if (adapter != null && adapter.getItemCount() == 0) {
-            tvEmpty.setVisibility(android.view.View.VISIBLE);
+            tvEmpty.setVisibility(View.VISIBLE);
         } else {
-            tvEmpty.setVisibility(android.view.View.GONE);
+            tvEmpty.setVisibility(View.GONE);
         }
     }
 }

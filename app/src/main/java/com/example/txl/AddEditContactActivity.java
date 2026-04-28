@@ -10,13 +10,11 @@ import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Pattern;
 
-public class AddEditContactActivity extends AppCompatActivity {
+public class AddEditContactActivity extends BaseActivity {
   public static final String EXTRA_CONTACT_ID = "contact_id";
 
   private EditText etName;

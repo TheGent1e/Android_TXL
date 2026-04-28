@@ -1,26 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#F5F5F5">
+    android:background="@color/bg_dark">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:padding="12dp"
-        android:gravity="center_vertical"
-        android:background="#FFFFFF">
+        android:padding="16dp"
+        android:gravity="center_vertical">
 
         <TextView
             android:id="@+id/tv_dialer_number"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:textSize="24sp"
-            android:textColor="#333333"
-            android:gravity="center" />
+            android:textSize="28sp"
+            android:textColor="@color/neon_cyan"
+            android:gravity="center"
+            android:letterSpacing="0.1"
+            android:fontFamily="monospace" />
 
         <ImageButton
             android:id="@+id/btn_dialer_backspace"
@@ -28,6 +30,7 @@
             android:layout_height="48dp"
             android:background="?attr/selectableItemBackgroundBorderless"
             android:src="@android:drawable/ic_input_delete"
+            app:tint="@color/neon_pink"
             android:contentDescription="删除" />
     </LinearLayout>
 
@@ -37,9 +40,9 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:numColumns="3"
-        android:horizontalSpacing="2dp"
-        android:verticalSpacing="2dp"
-        android:padding="8dp"
+        android:horizontalSpacing="8dp"
+        android:verticalSpacing="8dp"
+        android:padding="12dp"
         android:stretchMode="columnWidth" />
 
     <LinearLayout
@@ -47,12 +50,12 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center"
-        android:padding="12dp">
+        android:padding="16dp">
 
         <LinearLayout
             android:id="@+id/btn_call_telecom"
             android:layout_width="0dp"
-            android:layout_height="48dp"
+            android:layout_height="52dp"
             android:layout_weight="1"
             android:orientation="horizontal"
             android:gravity="center"
@@ -62,23 +65,26 @@
             android:focusable="true">
 
             <ImageView
-                android:layout_width="32dp"
-                android:layout_height="32dp"
-                android:src="@drawable/ic_phoneb"
-                android:contentDescription="@string/phone"
-                />
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_phone_green"
+                app:tint="#0D1117"
+                android:layout_marginEnd="8dp"
+                android:contentDescription="@string/phone" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="中国电信"
-                android:textColor="#FFFFFF"
-                android:textSize="14sp" />
+                android:textColor="#0D1117"
+                android:textSize="14sp"
+                android:textStyle="bold" />
         </LinearLayout>
 
         <LinearLayout
             android:id="@+id/btn_call_unicom"
             android:layout_width="0dp"
-            android:layout_height="48dp"
+            android:layout_height="52dp"
             android:layout_weight="1"
             android:orientation="horizontal"
             android:gravity="center"
@@ -90,15 +96,17 @@
             <ImageView
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                android:src="@drawable/ic_phoneb"
-                android:layout_marginEnd="4dp" />
+                android:src="@drawable/ic_phone_green"
+                app:tint="#0D1117"
+                android:layout_marginEnd="8dp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="中国联通"
-                android:textColor="#FFFFFF"
-                android:textSize="14sp" />
+                android:textColor="#0D1117"
+                android:textSize="14sp"
+                android:textStyle="bold" />
         </LinearLayout>
     </LinearLayout>
 

@@ -2,40 +2,43 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F5F5F5">
+    android:background="@color/bg_dark">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="16dp">
+        android:padding="20dp">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/name"
             android:textSize="14sp"
-            android:textColor="#666666"
-            android:layout_marginBottom="4dp" />
+            android:textColor="@color/text_secondary"
+            android:layout_marginBottom="8dp" />
 
         <EditText
             android:id="@+id/et_name"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="52dp"
             android:hint="@string/name_hint"
-            android:padding="12dp"
-            android:background="#FFFFFF"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:background="@drawable/bg_glass_card"
             android:inputType="text"
             android:maxLines="1"
-            android:layout_marginBottom="16dp" />
+            android:textColor="@color/text_primary"
+            android:textColorHint="@color/text_muted"
+            android:layout_marginBottom="20dp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/phone"
             android:textSize="14sp"
-            android:textColor="#666666"
-            android:layout_marginBottom="4dp" />
+            android:textColor="@color/text_secondary"
+            android:layout_marginBottom="8dp" />
 
         <LinearLayout
             android:id="@+id/ll_phones"
@@ -45,32 +48,34 @@
 
         <Button
             android:id="@+id/btn_add_phone"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
             android:text="@string/add_phone"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="16dp"
-            style="@style/Widget.AppCompat.Button.Borderless" />
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/bg_search_bar"
+            android:textColor="@color/neon_cyan" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/note"
             android:textSize="14sp"
-            android:textColor="#666666"
-            android:layout_marginBottom="4dp" />
+            android:textColor="@color/text_secondary"
+            android:layout_marginBottom="8dp" />
 
         <EditText
             android:id="@+id/et_note"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="120dp"
             android:hint="@string/note_hint"
-            android:padding="12dp"
-            android:background="#FFFFFF"
+            android:padding="16dp"
+            android:background="@drawable/bg_glass_card"
             android:inputType="textMultiLine"
-            android:minLines="3"
             android:gravity="top"
-            android:layout_marginBottom="24dp" />
+            android:textColor="@color/text_primary"
+            android:textColorHint="@color/text_muted"
+            android:layout_marginBottom="28dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -80,20 +85,23 @@
             <Button
                 android:id="@+id/btn_cancel"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="52dp"
                 android:layout_weight="1"
                 android:text="@string/cancel"
                 android:layout_marginEnd="8dp"
-                android:backgroundTint="#9E9E9E" />
+                android:background="@drawable/bg_phone_item"
+                android:textColor="@color/text_secondary" />
 
             <Button
                 android:id="@+id/btn_save"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="52dp"
                 android:layout_weight="1"
                 android:text="@string/save"
                 android:layout_marginStart="8dp"
-                android:backgroundTint="#4CAF50" />
+                android:background="@drawable/bg_neon_button_cyan"
+                android:textColor="#0D1117"
+                android:textStyle="bold" />
         </LinearLayout>
 
     </LinearLayout>

@@ -22,11 +22,10 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
-public class DialerActivity extends AppCompatActivity {
+public class DialerActivity extends BaseActivity {
     private static final int CALL_PHONE_PERMISSION_REQUEST = 101;
 
     private EditText etPhoneNumber;

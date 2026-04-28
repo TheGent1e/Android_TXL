@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="appBackground" format="reference|color" />
+    <attr name="cardBackground" format="reference|color" />
+    <attr name="cardBackgroundLight" format="reference|color" />
+    <attr name="textPrimary" format="reference|color" />
+    <attr name="textSecondary" format="reference|color" />
+    <attr name="textMuted" format="reference|color" />
+    <attr name="borderColor" format="reference|color" />
+    <attr name="accentColor" format="reference|color" />
+    <attr name="buttonPrimary" format="reference|color" />
+    <attr name="buttonDanger" format="reference|color" />
+    <attr name="iconTint" format="reference|color" />
+</resources>
