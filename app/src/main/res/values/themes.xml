@@ -1,34 +1,20 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Dark Theme (Tech Sci-Fi) -->
-    <style name="Base.Theme.Txl" parent="Theme.Material3.DayNight.NoActionBar">
-        <item name="android:windowBackground">@color/bg_dark</item>
-        <item name="colorPrimary">@color/neon_cyan</item>
-        <item name="colorPrimaryVariant">@color/neon_blue</item>
-        <item name="colorOnPrimary">@color/bg_dark</item>
-        <item name="appBackground">@color/bg_dark</item>
-        <item name="cardBackground">@color/bg_card</item>
-        <item name="cardBackgroundLight">@color/bg_card_light</item>
-        <item name="textPrimary">@color/text_primary</item>
-        <item name="textSecondary">@color/text_secondary</item>
-        <item name="textMuted">@color/text_muted</item>
-        <item name="borderColor">@color/glass_border</item>
-        <item name="accentColor">@color/neon_cyan</item>
+    <style name="Base.Theme.Txl" parent="Theme.Material3.Light.NoActionBar">
+        <item name="android:windowBackground">#0D1117</item>
+        <item name="colorPrimary">#00E5FF</item>
+        <item name="colorPrimaryVariant">#448AFF</item>
+        <item name="colorOnPrimary">#0D1117</item>
+        <item name="android:statusBarColor">#0D1117</item>
+        <item name="android:navigationBarColor">#0D1117</item>
     </style>
 
-    <!-- Light Theme (Classic) -->
-    <style name="Base.Theme.Txl.Light" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Base.Theme.Txl.Light" parent="Theme.Material3.Light.NoActionBar">
         <item name="android:windowBackground">#F5F5F5</item>
         <item name="colorPrimary">#4CAF50</item>
         <item name="colorPrimaryVariant">#388E3C</item>
         <item name="colorOnPrimary">#FFFFFF</item>
-        <item name="appBackground">#F5F5F5</item>
-        <item name="cardBackground">#FFFFFF</item>
-        <item name="cardBackgroundLight">#FAFAFA</item>
-        <item name="textPrimary">#212121</item>
-        <item name="textSecondary">#757575</item>
-        <item name="textMuted">#BDBDBD</item>
-        <item name="borderColor">#E0E0E0</item>
-        <item name="accentColor">#4CAF50</item>
+        <item name="android:statusBarColor">#F5F5F5</item>
+        <item name="android:navigationBarColor">#F5F5F5</item>
     </style>
 
     <style name="Theme.Txl" parent="Base.Theme.Txl" />
