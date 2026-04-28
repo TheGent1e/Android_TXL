@@ -40,10 +40,11 @@
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_marginStart="8dp"
-                android:background="?attr/selectableItemBackgroundBorderless"
-                android:contentDescription="切换主题"
+                android:background="@drawable/bg_glass_card"
                 android:padding="8dp"
-                android:scaleType="centerInside" />
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_theme_light"
+                android:contentDescription="切换主题" />
 
             <ImageButton
                 android:id="@+id/btn_add"
