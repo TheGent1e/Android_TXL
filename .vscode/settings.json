@@ -1,0 +1,6 @@
+{
+  "writerHelper.enabled": true,
+  "editor.wrappingIndent": "none",
+  "writerHelper.plugin.lineAsParagraph": true,
+  "writerHelper.plugin.markdownFormatting": true
+}

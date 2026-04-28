@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="32dp"
+            android:background="#FFFFFF"
+            android:elevation="2dp">
+
+            <ImageView
+                android:id="@+id/iv_avatar_detail"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:src="@drawable/circle_avatar"
+                android:contentDescription="@string/avatar"
+                android:scaleType="centerCrop"
+                android:background="@drawable/circle_image_mask"
+                android:clipToOutline="true"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <TextView
+                android:id="@+id/tv_change_avatar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="点击更换头像"
+                android:textSize="12sp"
+                android:textColor="#999999" />
+
+            <TextView
+                android:id="@+id/tv_name_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="#333333" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_phones_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp"
+            android:background="#FFFFFF"
+            android:elevation="2dp" />
+
+        <LinearLayout
+            android:id="@+id/ll_note_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp"
+            android:padding="16dp"
+            android:background="#FFFFFF"
+            android:elevation="2dp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/note"
+                android:textSize="14sp"
+                android:textColor="#666666" />
+
+            <TextView
+                android:id="@+id/tv_note_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textSize="16sp"
+                android:textColor="#333333" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:layout_marginTop="16dp">
+
+            <Button
+                android:id="@+id/btn_edit_detail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/edit"
+                android:layout_marginEnd="8dp"
+                android:backgroundTint="#4CAF50"
+                android:drawableStart="@drawable/ic_edit"
+                android:drawablePadding="8dp" />
+
+            <Button
+                android:id="@+id/btn_delete_detail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/delete"
+                android:layout_marginStart="8dp"
+                android:backgroundTint="#F44336"
+                android:drawableStart="@drawable/ic_delete"
+                android:drawablePadding="8dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn_dial_detail"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:backgroundTint="#454999"
+                android:text="拨号" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

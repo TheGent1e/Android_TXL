@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">通讯录</string>
+    <string name="search_hint">搜索联系人...</string>
+    <string name="add_contact">添加联系人</string>
+    <string name="no_contacts">暂无联系人</string>
+    <string name="avatar">头像</string>
+    <string name="name">姓名</string>
+    <string name="name_hint">请输入姓名</string>
+    <string name="phone">电话</string>
+    <string name="phone_hint">请输入电话号码</string>
+    <string name="note">备注</string>
+    <string name="note_hint">请输入备注</string>
+    <string name="save">保存</string>
+    <string name="cancel">取消</string>
+    <string name="edit">编辑</string>
+    <string name="delete">删除</string>
+    <string name="confirm_delete">确定要删除这个联系人吗？</string>
+    <string name="confirm">确定</string>
+    <string name="contact_detail">联系人详情</string>
+    <string name="add_new_contact">添加新联系人</string>
+    <string name="edit_contact">编辑联系人</string>
+    <string name="name_required">请输入姓名</string>
+    <string name="phone_required">请至少输入一个电话号码</string>
+    <string name="invalid_phone">请输入有效的电话号码</string>
+    <string name="add_phone">添加电话</string>
+    <string name="remove">移除</string>
+    <string name="contact_saved">联系人保存成功</string>
+    <string name="contact_deleted">联系人删除成功</string>
+    <string name="dialer">拨号盘</string>
+    <string name="tab_contacts">联系人</string>
+    <string name="tab_dialer">拨号</string>
+    <string name="tab_call_log">通话记录</string>
+</resources>

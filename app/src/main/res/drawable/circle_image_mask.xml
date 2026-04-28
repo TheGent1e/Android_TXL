@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+    <!-- 透明边框（可选，可去掉） -->
+    <stroke
+        android:width="1dp"
+        android:color="#FFFFFF" />
+    <!-- 实心填充（如果图片没加载时显示的底色） -->
+    <solid android:color="#4CAF50" />
+    <!-- 大小（和ImageView保持一致） -->
+    <size
+        android:width="96dp"
+        android:height="96dp" />
+</shape>
