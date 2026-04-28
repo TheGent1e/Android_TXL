@@ -1,104 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#0D1117">
+    android:orientation="vertical"
+    android:background="@color/tech_bg_primary">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:background="@color/tech_bg_secondary"
+        android:elevation="4dp">
 
-        <LinearLayout
-            android:layout_width="match_parent"
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:padding="16dp"
-            android:gravity="center_vertical">
+            android:layout_weight="1"
+            android:hint="@string/search_hint"
+            android:padding="12dp"
+            android:background="@drawable/bg_tech_input"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textColor="@color/tech_text_primary"
+            android:textColorHint="@color/tech_text_secondary" />
 
-            <EditText
-                android:id="@+id/et_search"
-                android:layout_width="0dp"
-                android:layout_height="48dp"
-                android:layout_weight="1"
-                android:hint="@string/search_hint"
-                android:paddingStart="20dp"
-                android:paddingEnd="20dp"
-                android:background="@drawable/bg_search_bar"
-                android:inputType="text"
-                android:maxLines="1"
-                android:textColor="#E6EDF3"
-                android:textColorHint="#484F58"
-                android:drawableStart="@drawable/ic_search"
-                android:drawablePadding="12dp"
-                android:drawableTint="#484F58" />
-
-            <ImageButton
-                android:id="@+id/btn_theme_toggle"
-                android:layout_width="48dp"
-                android:layout_height="48dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginEnd="8dp"
-                android:background="@drawable/bg_neon_circle"
-                android:padding="12dp"
-                android:scaleType="centerInside"
-                android:src="@drawable/ic_theme_light"
-                android:contentDescription="切换主题" />
-
-            <ImageButton
-                android:id="@+id/btn_add"
-                android:layout_width="48dp"
-                android:layout_height="48dp"
-                android:layout_marginStart="4dp"
-                android:src="@drawable/ic_add_neon"
-                android:background="@drawable/bg_neon_circle_green"
-                android:contentDescription="@string/add_contact"
-                android:scaleType="centerInside"
-                android:padding="12dp" />
-        </LinearLayout>
-
-        <FrameLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1">
-
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/recycler_view"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:padding="8dp"
-                android:clipToPadding="false" />
-
-            <com.example.txl.SideIndexView
-                android:id="@+id/side_index"
-                android:layout_width="30dp"
-                android:layout_height="match_parent"
-                android:layout_gravity="end"
-                android:layout_marginEnd="4dp" />
-
-            <TextView
-                android:id="@+id/tv_empty"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="@string/no_contacts"
-                android:textSize="16sp"
-                android:textColor="#484F58"
-                android:visibility="gone" />
-        </FrameLayout>
+        <ImageButton
+            android:id="@+id/btn_add"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="12dp"
+            android:src="@drawable/ic_add"
+            android:background="@drawable/bg_tech_button"
+            android:contentDescription="@string/add_contact" />
     </LinearLayout>
 
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp"
+            android:clipToPadding="false" />
+
+        <com.example.txl.SideIndexView
+            android:id="@+id/side_index"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:layout_marginEnd="4dp" />
+
+        <TextView
+            android:id="@+id/tv_empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/no_contacts"
+            android:textSize="16sp"
+            android:textColor="@color/tech_text_secondary"
+            android:visibility="gone" />
+    </FrameLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="64dp"
-        android:layout_gravity="bottom"
+        android:layout_height="56dp"
         android:orientation="horizontal"
-        android:padding="8dp"
-        android:layout_margin="16dp"
-        android:background="@drawable/bg_bottom_nav"
-        android:elevation="16dp"
+        android:background="@color/tech_bg_secondary"
+        android:elevation="8dp"
         android:gravity="center">
 
         <LinearLayout
@@ -108,22 +82,23 @@
             android:layout_weight="1"
             android:orientation="vertical"
             android:gravity="center"
+            android:background="@color/tech_bg_secondary"
             android:clickable="true"
             android:focusable="true">
 
             <ImageView
                 android:layout_width="24dp"
                 android:layout_height="24dp"
-                android:src="@drawable/ic_contacts_neon"
-                app:tint="#00E5FF" />
+                android:src="@drawable/ic_contacts"
+                app:tint="@color/tech_accent_blue" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/tab_contacts"
                 android:textSize="10sp"
-                android:textColor="#00E5FF"
-                android:layout_marginTop="4dp" />
+                android:textColor="@color/tech_accent_blue"
+                android:layout_marginTop="2dp" />
         </LinearLayout>
 
         <LinearLayout
@@ -133,22 +108,23 @@
             android:layout_weight="1"
             android:orientation="vertical"
             android:gravity="center"
+            android:background="?attr/selectableItemBackground"
             android:clickable="true"
             android:focusable="true">
 
             <ImageView
                 android:layout_width="24dp"
                 android:layout_height="24dp"
-                android:src="@drawable/ic_dialpad_neon"
-                app:tint="#8B949E" />
+                android:src="@drawable/ic_dialpad"
+                app:tint="@color/tech_text_secondary" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/tab_dialer"
                 android:textSize="10sp"
-                android:textColor="#8B949E"
-                android:layout_marginTop="4dp" />
+                android:textColor="@color/tech_text_secondary"
+                android:layout_marginTop="2dp" />
         </LinearLayout>
 
         <LinearLayout
@@ -158,23 +134,24 @@
             android:layout_weight="1"
             android:orientation="vertical"
             android:gravity="center"
+            android:background="?attr/selectableItemBackground"
             android:clickable="true"
             android:focusable="true">
 
             <ImageView
                 android:layout_width="24dp"
                 android:layout_height="24dp"
-                android:src="@drawable/ic_call_log_neon"
-                app:tint="#8B949E" />
+                android:src="@drawable/ic_call_log"
+                app:tint="@color/tech_text_secondary" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/tab_call_log"
                 android:textSize="10sp"
-                android:textColor="#8B949E"
-                android:layout_marginTop="4dp" />
+                android:textColor="@color/tech_text_secondary"
+                android:layout_marginTop="2dp" />
         </LinearLayout>
     </LinearLayout>
 
-</androidx.coordinatorlayout.widget.CoordinatorLayout>
+</LinearLayout>

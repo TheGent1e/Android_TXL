@@ -2,43 +2,42 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/bg_dark">
+    android:background="@color/tech_bg_primary">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="20dp">
+        android:padding="16dp">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/name"
             android:textSize="14sp"
-            android:textColor="@color/text_secondary"
-            android:layout_marginBottom="8dp" />
+            android:textColor="@color/tech_accent_blue"
+            android:layout_marginBottom="4dp" />
 
         <EditText
             android:id="@+id/et_name"
             android:layout_width="match_parent"
-            android:layout_height="52dp"
+            android:layout_height="wrap_content"
             android:hint="@string/name_hint"
-            android:paddingStart="16dp"
-            android:paddingEnd="16dp"
-            android:background="@drawable/bg_glass_card"
+            android:padding="12dp"
+            android:background="@drawable/bg_tech_input"
             android:inputType="text"
             android:maxLines="1"
-            android:textColor="@color/text_primary"
-            android:textColorHint="@color/text_muted"
-            android:layout_marginBottom="20dp" />
+            android:textColor="@color/tech_text_primary"
+            android:textColorHint="@color/tech_text_secondary"
+            android:layout_marginBottom="16dp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/phone"
             android:textSize="14sp"
-            android:textColor="@color/text_secondary"
-            android:layout_marginBottom="8dp" />
+            android:textColor="@color/tech_accent_blue"
+            android:layout_marginBottom="4dp" />
 
         <LinearLayout
             android:id="@+id/ll_phones"
@@ -48,34 +47,35 @@
 
         <Button
             android:id="@+id/btn_add_phone"
-            android:layout_width="match_parent"
-            android:layout_height="48dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="@string/add_phone"
-            android:layout_marginTop="12dp"
-            android:layout_marginBottom="20dp"
-            android:background="@drawable/bg_search_bar"
-            android:textColor="@color/neon_cyan" />
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:textColor="@color/tech_accent_cyan"
+            style="@style/Widget.AppCompat.Button.Borderless" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/note"
             android:textSize="14sp"
-            android:textColor="@color/text_secondary"
-            android:layout_marginBottom="8dp" />
+            android:textColor="@color/tech_accent_blue"
+            android:layout_marginBottom="4dp" />
 
         <EditText
             android:id="@+id/et_note"
             android:layout_width="match_parent"
-            android:layout_height="120dp"
+            android:layout_height="wrap_content"
             android:hint="@string/note_hint"
-            android:padding="16dp"
-            android:background="@drawable/bg_glass_card"
+            android:padding="12dp"
+            android:background="@drawable/bg_tech_input"
             android:inputType="textMultiLine"
+            android:minLines="3"
             android:gravity="top"
-            android:textColor="@color/text_primary"
-            android:textColorHint="@color/text_muted"
-            android:layout_marginBottom="28dp" />
+            android:textColor="@color/tech_text_primary"
+            android:textColorHint="@color/tech_text_secondary"
+            android:layout_marginBottom="24dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -85,23 +85,22 @@
             <Button
                 android:id="@+id/btn_cancel"
                 android:layout_width="0dp"
-                android:layout_height="52dp"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/cancel"
                 android:layout_marginEnd="8dp"
-                android:background="@drawable/bg_phone_item"
-                android:textColor="@color/text_secondary" />
+                android:backgroundTint="@color/tech_border"
+                android:textColor="@color/tech_text_primary" />
 
             <Button
                 android:id="@+id/btn_save"
                 android:layout_width="0dp"
-                android:layout_height="52dp"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/save"
                 android:layout_marginStart="8dp"
-                android:background="@drawable/bg_neon_button_cyan"
-                android:textColor="#0D1117"
-                android:textStyle="bold" />
+                android:backgroundTint="@color/tech_accent_blue"
+                android:textColor="@color/tech_bg_primary" />
         </LinearLayout>
 
     </LinearLayout>

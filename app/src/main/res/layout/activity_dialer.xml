@@ -1,43 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/bg_dark">
+    android:background="@color/tech_bg_primary">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:padding="16dp"
-        android:gravity="center_vertical">
+        android:padding="12dp"
+        android:background="@color/tech_bg_secondary"
+        android:elevation="4dp">
 
         <EditText
             android:id="@+id/et_phone_number"
             android:layout_width="0dp"
-            android:layout_height="56dp"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
             android:hint="@string/phone_hint"
-            android:paddingStart="20dp"
-            android:paddingEnd="20dp"
-            android:background="@drawable/bg_search_bar"
+            android:padding="12dp"
+            android:background="@drawable/bg_tech_input"
             android:inputType="phone"
             android:maxLines="1"
-            android:textSize="22sp"
-            android:textColor="@color/text_primary"
-            android:textColorHint="@color/text_muted"
-            android:textAlignment="center" />
+            android:textSize="20sp"
+            android:textColor="@color/tech_text_primary"
+            android:textColorHint="@color/tech_text_secondary" />
 
         <ImageButton
             android:id="@+id/btn_backspace"
             android:layout_width="48dp"
             android:layout_height="48dp"
-            android:layout_marginStart="12dp"
+            android:layout_marginStart="8dp"
             android:background="?attr/selectableItemBackgroundBorderless"
             android:contentDescription="删除"
-            android:src="@android:drawable/ic_input_delete"
-            app:tint="@color/neon_pink" />
+            android:src="@android:drawable/ic_input_delete" />
     </LinearLayout>
 
     <GridView
@@ -45,27 +42,26 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:horizontalSpacing="8dp"
+        android:horizontalSpacing="1dp"
         android:numColumns="3"
-        android:padding="16dp"
-        android:verticalSpacing="8dp"
-        android:stretchMode="columnWidth" />
+        android:padding="8dp"
+        android:verticalSpacing="1dp" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:padding="24dp"
+        android:padding="16dp"
         android:gravity="center">
 
         <Button
             android:id="@+id/btn_dial"
             android:layout_width="72dp"
             android:layout_height="72dp"
-            android:background="@drawable/bg_neon_circle_green"
-            android:backgroundTint="@null"
-            android:drawableStart="@drawable/ic_phone_green"
-            android:drawableTint="#0D1117"
+            android:backgroundTint="@color/tech_accent_cyan"
+            android:drawablePadding="0dp"
+            android:padding="0dp"
+            android:textColor="@color/tech_bg_primary"
             android:contentDescription="拨号" />
     </LinearLayout>
 
@@ -74,9 +70,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:padding="12dp"
+        android:padding="8dp"
         android:textSize="16sp"
-        android:textColor="@color/neon_green"
+        android:textColor="@color/tech_accent_cyan"
         android:visibility="gone" />
 
 </LinearLayout>

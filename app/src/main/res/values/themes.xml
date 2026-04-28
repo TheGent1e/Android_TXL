@@ -1,40 +1,19 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <style name="Base.Theme.Txl" parent="Theme.Material3.Light.NoActionBar">
-        <item name="android:windowBackground">#0D1117</item>
-        <item name="colorPrimary">#00E5FF</item>
-        <item name="colorPrimaryVariant">#448AFF</item>
-        <item name="colorOnPrimary">#0D1117</item>
-        <item name="android:statusBarColor">#0D1117</item>
-        <item name="android:navigationBarColor">#0D1117</item>
-        <item name="appBackground">#0D1117</item>
-        <item name="cardBackground">#161B22</item>
-        <item name="cardBackgroundLight">#21262D</item>
-        <item name="textPrimary">#E6EDF3</item>
-        <item name="textSecondary">#8B949E</item>
-        <item name="textMuted">#484F58</item>
-        <item name="accentColor">#00E5FF</item>
-        <item name="borderColor">#33FFFFFF</item>
-        <item name="dialpadBg">#21262D</item>
-        <item name="navBg">#21262D</item>
-    </style>
-
-    <style name="Base.Theme.Txl.Light" parent="Theme.Material3.Light.NoActionBar">
-        <item name="android:windowBackground">#F5F5F5</item>
-        <item name="colorPrimary">#4CAF50</item>
-        <item name="colorPrimaryVariant">#388E3C</item>
-        <item name="colorOnPrimary">#FFFFFF</item>
-        <item name="android:statusBarColor">#F5F5F5</item>
-        <item name="android:navigationBarColor">#F5F5F5</item>
-        <item name="appBackground">#F5F5F5</item>
-        <item name="cardBackground">#FFFFFF</item>
-        <item name="cardBackgroundLight">#FAFAFA</item>
-        <item name="textPrimary">#212121</item>
-        <item name="textSecondary">#757575</item>
-        <item name="textMuted">#BDBDBD</item>
-        <item name="accentColor">#4CAF50</item>
-        <item name="borderColor">#E0E0E0</item>
-        <item name="dialpadBg">#FAFAFA</item>
-        <item name="navBg">#E0E0E0</item>
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Txl" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary brand color -->
+        <item name="colorPrimary">@color/tech_accent_blue</item>
+        <item name="colorPrimaryVariant">@color/tech_bg_primary</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color -->
+        <item name="colorSecondary">@color/tech_accent_cyan</item>
+        <item name="colorSecondaryVariant">@color/tech_accent_purple</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color -->
+        <item name="android:statusBarColor">@color/tech_bg_primary</item>
+        <!-- Background colors -->
+        <item name="android:windowBackground">@color/tech_bg_primary</item>
+        <item name="android:colorBackground">@color/tech_bg_primary</item>
     </style>
 
     <style name="Theme.Txl" parent="Base.Theme.Txl" />

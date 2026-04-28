@@ -7,7 +7,6 @@ import android.graphics.Rect;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
-import androidx.core.content.ContextCompat;
 public class SideIndexView extends View {
     private static final String[] LETTERS = {"A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z","#"};
     private Paint paint;
@@ -18,12 +17,7 @@ public class SideIndexView extends View {
     public SideIndexView(Context context) { this(context, null); }
     public SideIndexView(Context context, AttributeSet attrs) { this(context, attrs, 0); }
     public SideIndexView(Context context, AttributeSet attrs, int defStyleAttr) { super(context, attrs, defStyleAttr); init(); }
-    private void init() {
-        paint = new Paint(Paint.ANTI_ALIAS_FLAG);
-        paint.setTextSize(28);
-        paint.setColor(Color.parseColor("#484F58"));
-        textBounds = new Rect();
-    }
+    private void init() { paint = new Paint(Paint.ANTI_ALIAS_FLAG); paint.setTextSize(28); paint.setColor(Color.GRAY); textBounds = new Rect(); }
     public void setOnIndexSelectedListener(OnIndexSelectedListener l) { this.listener = l; }
     @Override protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
@@ -32,15 +26,8 @@ public class SideIndexView extends View {
             String letter = LETTERS[i];
             paint.getTextBounds(letter, 0, letter.length(), textBounds);
             float xp = (w - textBounds.width()) / 2f, yp = sh * i + sh;
-            if (i == selectedIndex) {
-                paint.setColor(Color.parseColor("#00E5FF"));
-                paint.setTextSize(34);
-                paint.setFakeBoldText(true);
-            } else {
-                paint.setColor(Color.parseColor("#484F58"));
-                paint.setTextSize(26);
-                paint.setFakeBoldText(false);
-            }
+            if (i == selectedIndex) { paint.setColor(Color.parseColor("#4CAF50")); paint.setTextSize(32); }
+            else { paint.setColor(Color.GRAY); paint.setTextSize(28); }
             canvas.drawText(letter, xp, yp, paint);
         }
     }

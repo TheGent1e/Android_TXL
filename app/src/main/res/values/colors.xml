@@ -2,26 +2,14 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    
-    <!-- 深色主题背景 -->
-    <color name="bg_dark">#0D1117</color>
-    <color name="bg_card">#161B22</color>
-    <color name="bg_card_light">#21262D</color>
-    
-    <!-- 霓虹色系 -->
-    <color name="neon_cyan">#00E5FF</color>
-    <color name="neon_purple">#B388FF</color>
-    <color name="neon_green">#76FF03</color>
-    <color name="neon_blue">#448AFF</color>
-    <color name="neon_orange">#FF6E40</color>
-    <color name="neon_pink">#F50057</color>
-    
-    <!-- 半透明玻璃 -->
-    <color name="glass_bg">#1AFFFFFF</color>
-    <color name="glass_border">#33FFFFFF</color>
-    
-    <!-- 文字颜色 -->
-    <color name="text_primary">#E6EDF3</color>
-    <color name="text_secondary">#8B949E</color>
-    <color name="text_muted">#484F58</color>
+    <color name="tech_bg_primary">#FF0A0E17</color>
+    <color name="tech_bg_secondary">#FF111827</color>
+    <color name="tech_bg_card">#FF1A2332</color>
+    <color name="tech_accent_blue">#FF00D4FF</color>
+    <color name="tech_accent_cyan">#FF00F5D4</color>
+    <color name="tech_accent_purple">#FF9D4EDD</color>
+    <color name="tech_text_primary">#FFE2E8F0</color>
+    <color name="tech_text_secondary">#FF94A3B8</color>
+    <color name="tech_border">#FF1E3A5F</color>
+    <color name="tech_glow">#4D00D4FF</color>
 </resources>
