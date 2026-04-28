@@ -10,14 +10,6 @@ public class ThemeManager {
     public static final String THEME_DARK = "dark";
     public static final String THEME_LIGHT = "light";
 
-    public static void applyTheme(Context context) {
-        if (isDarkTheme(context)) {
-            context.setTheme(R.style.Base_Theme_Txl);
-        } else {
-            context.setTheme(R.style.Base_Theme_Txl_Light);
-        }
-    }
-
     public static void setDarkTheme(Context context, boolean isDark) {
         SharedPreferences prefs = context.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE);
         prefs.edit().putString(KEY_THEME, isDark ? THEME_DARK : THEME_LIGHT).apply();
@@ -31,6 +23,5 @@ public class ThemeManager {
     public static void toggleTheme(Activity activity) {
         boolean wasDark = isDarkTheme(activity);
         setDarkTheme(activity, !wasDark);
-        activity.recreate();
     }
 }

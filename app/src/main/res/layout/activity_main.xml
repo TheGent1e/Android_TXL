@@ -4,7 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="?attr/appBackground">
+    android:background="#0D1117">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -29,11 +29,11 @@
                 android:background="@drawable/bg_search_bar"
                 android:inputType="text"
                 android:maxLines="1"
-                android:textColor="?attr/textPrimary"
-                android:textColorHint="?attr/textMuted"
+                android:textColor="#E6EDF3"
+                android:textColorHint="#484F58"
                 android:drawableStart="@drawable/ic_search"
                 android:drawablePadding="12dp"
-                android:drawableTint="?attr/textMuted" />
+                android:drawableTint="#484F58" />
 
             <ImageButton
                 android:id="@+id/btn_theme_toggle"
@@ -85,7 +85,7 @@
                 android:layout_gravity="center"
                 android:text="@string/no_contacts"
                 android:textSize="16sp"
-                android:textColor="?attr/textMuted"
+                android:textColor="#484F58"
                 android:visibility="gone" />
         </FrameLayout>
     </LinearLayout>
@@ -115,14 +115,14 @@
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:src="@drawable/ic_contacts_neon"
-                app:tint="?attr/accentColor" />
+                app:tint="#00E5FF" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/tab_contacts"
                 android:textSize="10sp"
-                android:textColor="?attr/accentColor"
+                android:textColor="#00E5FF"
                 android:layout_marginTop="4dp" />
         </LinearLayout>
 
@@ -140,14 +140,14 @@
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:src="@drawable/ic_dialpad_neon"
-                app:tint="?attr/textSecondary" />
+                app:tint="#8B949E" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/tab_dialer"
                 android:textSize="10sp"
-                android:textColor="?attr/textSecondary"
+                android:textColor="#8B949E"
                 android:layout_marginTop="4dp" />
         </LinearLayout>
 
@@ -165,14 +165,14 @@
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:src="@drawable/ic_call_log_neon"
-                app:tint="?attr/textSecondary" />
+                app:tint="#8B949E" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/tab_call_log"
                 android:textSize="10sp"
-                android:textColor="?attr/textSecondary"
+                android:textColor="#8B949E"
                 android:layout_marginTop="4dp" />
         </LinearLayout>
     </LinearLayout>
